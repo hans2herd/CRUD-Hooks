@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import UserTable from './tables/UserTable';
-import AddUserForm from './forms/AddUserForm'
-import EditUserForm from './forms/EditUserForm'
+import AddUserForm from './forms/AddUserForm';
+import EditUserForm from './forms/EditUserForm';
 
 const App = () => {
   // Data
+  
   const usersData = [
     { id:1, name: 'Tania', username: 'floppydiskette' },
     { id:2, name: 'Craig', username: 'siliconeidolon' },
@@ -41,7 +42,7 @@ const App = () => {
 
   return (
     <div className="container">
-     <h1>CRUD app wit hooks yo</h1>
+     <h1>User Form</h1>
      <div className="flex-row">
       <div className="flex-large">
         {editing ? (
